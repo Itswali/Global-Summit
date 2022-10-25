@@ -240,51 +240,6 @@ html {
 /*  */
 /*  */
 
-#see-more {
-    display: flex;
-    justify-content: center;
-    gap: 13px;
-    background-color: transparent;
-    border: 1px solid var(--secondaryColor);
-    padding: 12px;
-    margin: 12px 0;
-    text-align: center;
-  }
-  
-  #see-more i {
-    color: var(--concentColor);
-    margin-top: 2px;
-  }
 
-
-  .Intro {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 70px;
-    margin-bottom: 50px;
-  }
-
-  .speakerInt {
-    gap: 5%;
-  }
-
-  .speakerInt img {
-    width: 110%;
-  }
-
-  .speaker-name {
-    font-size: 22px;
-    margin: 3px;
-  }
-
-  .speaker-profession {
-    font-size: 13px;
-    margin: 3px;
-  }
-
-  .speaker-description {
-    font-size: 14px;
-    margin: 3px;
-  }
 
   
