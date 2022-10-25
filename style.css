@@ -397,7 +397,6 @@ html {
   }
 
   .program-button {
-    margin-left: 45%;
     background-color: transparent;
     margin-bottom: 2%;
     color: white;
@@ -478,7 +477,7 @@ html {
   }
 
   .sponsors {
-    height: 50vh;
+    height: 40vh;
     width: 100%;
     background-color: rgb(39, 42, 50);
     display: flex;
@@ -545,12 +544,14 @@ html {
   }
 
   .copyright-section {
-    margin-top: 34%;
-    background-image: url(Images/bg-desktop.png);
-    height: 25vh;
-    width: 100%;
     display: flex;
     flex-direction: row;
+    padding-top: 120px;
+    margin-top: 35%;
+    background-image: url(Images/bg-desktop.png);
+    height: 35vh;
+    width: 100%;
+   
   }
 
   .copyright {
@@ -560,12 +561,14 @@ html {
 
   .copyright-logo img {
     width: 35%;
-    margin-top: 6%;
+    margin-top: 7%;
+    align-self: center;
     margin-left: 25%;
   }
 
   .copy-right p {
     margin-top: 20%;
+    align-self: center;
     width: fit-content;
     font-size: 24px;
   }
