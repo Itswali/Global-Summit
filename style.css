@@ -30,13 +30,13 @@ html {
 
 .semi-nav-items {
     display: flex;
-    
+
 }
 
 
 .semi-nav-items a {
     padding: 10px;
-   color: aliceblue;
+    color: aliceblue;
 
 }
 
@@ -86,8 +86,11 @@ html {
 
 .header-body {
     background-image: url(Images/bg-desktop.png);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding-left: 10%;
 
 }
@@ -96,7 +99,6 @@ html {
     display: flex;
     flex-direction: column;
     height: 40%;
-    gap: 7%;
 }
 
 .header-h2 {
@@ -110,14 +112,14 @@ html {
 .header-h1 {
     color: gold;
     font-size: 26px;
-    width: 60%;
+    width: 65%;
     font-weight: 700;
 }
 
 .header-para {
-  width: 50%;
-  padding: 20px;
-  margin-top: 5%;
+    width: 50%;
+    padding: 20px;
+    margin-top: 2%;
 }
 
 .header-para p {
@@ -132,9 +134,10 @@ html {
     flex-direction: column;
     margin: 20px;
 }
-.header-about p{
-  font-size: 30px;
-  font-weight: 700;
+
+.header-about p {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .middle {
@@ -143,11 +146,98 @@ html {
     border: 5px solid greenyellow;
 }
 
+
+/*  */
+/*  */
+/*  */
+
 .main-program {
-    height: 80vh;
     background-image: url(Images/program-pattern.png);
-    background-color: #3e3e3e;
-    width: 100%;
-    border: 5px solid black;
-    display: flex;
+    background-repeat: repeat;
+    background-color: rgb(39, 42, 50);
+    margin: auto;
 }
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    width: 90%;
+    align-items: center;
+    margin-top: 8px;
+    padding: 0.8rem;
+}
+
+.program-heading {
+    font-size: 30px;
+}
+
+.all-program {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-content: center;
+    height: 90%;
+}
+
+
+.program p {
+    font-size: 1.3rem;
+}
+
+.program .description {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.program p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: brown;
+}
+
+.program pre {
+    font-size: 14px;
+    font-weight: bold;
+    color: brown;
+    padding-bottom: 5px;
+}
+
+.program-heading {
+    text-align: center;
+    color: white;
+    padding-top: 5rem;
+}
+
+.program-heading h1 {
+    font-size: 24px;
+    margin-top: 0.1px;
+}
+
+.program-button {
+    margin-left: 44.5%;
+    background-color: transparent;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
