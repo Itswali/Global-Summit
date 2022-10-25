@@ -177,7 +177,7 @@ html {
 .all-program {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -239,6 +239,144 @@ html {
 /*  */
 /*  */
 /*  */
+
+.speakers {
+    width: 100%;
+    height: 70vh;
+    padding-top: 5%;
+    background-image: url(Images/bg-desktop.png);
+}
+
+.speaker-heading {
+    text-align: center;
+
+}
+
+.speakers-content,
+.speaker-content {
+    display: flex;
+ flex-direction: row;
+    gap: 2%;
+}
+
+.speaker-3,
+.speaker-1 {
+    display: flex;
+    height: 25vh;
+    /* flex-direction: column; */
+    margin: 3%;
+    width: fit-content;
+}
+
+.speaker-2-content,
+.speaker-3-content,
+.speaker-4-content,
+.speaker-1-content {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.speaker-2 h2,
+.speaker-3 h2,
+.speaker-4 h2,
+.speaker-1 h2 {
+    margin-top: 25px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.speaker-2 p,
+.speaker-3 p,
+.speaker-4 p,
+.speaker-1 p{
+    color: chocolate;
+    font-weight: 500;
+}
+
+.speaker-4,
+.speaker-2 {
+    display: flex;
+    height: 25vh;
+    margin: 3%;
+    width: fit-content;
+}
+
+.sponsors {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(39, 42, 50);
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-heading {
+    /* width: 8%; */
+    margin-top: 6%;
+    align-self: center;
+}
+
+.sponsor-heading  h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid darkorange;
+    /* border-width: 4px; */
+    /* border-right: 10px; */
+}
+
+.sponsor-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    gap: 4%;
+    margin: 3%;
+    
+}
+
+
+.sponsor-2,
+.sponsor-3,
+.sponsor-5,
+.sponsor-4,
+.sponsor-1 {
+    /* border: 2px solid green; */
+    width: 15%;
+    height: 60%;
+}
+
+.sponsor-1 img {
+    width: 95%;
+    margin: 3%;
+}
+
+.sponsor-2 img {
+    margin: 5%;
+    width: 92%;
+    margin-top: 12%;
+}
+.sponsor-3 img {
+    margin: 2%;
+    width: 92%;
+    margin-top: 12%;
+}
+
+.sponsor-4 img {
+  margin: 2%;
+  width: 95%;
+  margin-top: 4%;
+}
+
+.sponsor-5 img {
+    width: 92%;
+    margin: 2%;
+    margin-top: 7%;
+}
+
+
 
 
 
