@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -96,7 +97,6 @@ html {
     padding-left: 10%;
 
 }
-
 .header-text {
     display: flex;
     flex-direction: column;
@@ -106,16 +106,17 @@ html {
 .header-h2 {
     color: #ffd700;
     padding-top: 12%;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
 
 }
 
 .header-h1 {
     color: gold;
-    font-size: 26px;
+    font-size: 35px;
     width: 65%;
-    font-weight: 700;
+    font-weight: 800;
+
 }
 
 .header-para {
@@ -158,6 +159,7 @@ html {
     background-repeat: repeat;
     background-color: rgb(39, 42, 50);
     margin: auto;
+    height: 48vh;
 }
 
 .program {
@@ -224,15 +226,14 @@ html {
 
 .program-heading h1 {
     font-size: 24px;
-    margin-top: 0.1px;
 }
 
 .program-button {
-    margin-left: 44.5%;
+    margin-left: 45%;
     background-color: transparent;
     margin-bottom: 2%;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     border-bottom: 1px solid white;
 }
 
@@ -250,8 +251,11 @@ html {
 }
 
 .speaker-heading {
-    text-align: center;
+    align-self: center;
+}
 
+.speaker-heading h2 {
+    text-align: center;
 }
 
 .speakers-content,
