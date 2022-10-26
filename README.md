@@ -42,10 +42,7 @@
 
 - GitHub: [@Itswali](https://github.com/Itswali)
 - Twitter: [@Wali-Muhammad](https://twitter.com/WaliMuh94818599)
-- LinkedIn: [wali-Muhammad](https://linkedin.com/in/wali-muhammad-666040244/)
-
-## 👏 Acknowledgement 
-1. [Cindy Shin in Behance.](https://www.behance.net/adagio07)
+- LinkedIn: [@wali-Muhammad](https://linkedin.com/in/wali-muhammad-666040244/)
 
 
 ## 🤝 Contributing
