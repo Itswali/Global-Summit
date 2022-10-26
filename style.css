@@ -57,6 +57,23 @@ html {
   line-height: 44px;
 }
 
+.partnership img {
+  width: 100%;
+}
+
+.un-logo img {
+  width: 100%;
+}
+
+.gallery img {
+  width: 80%;
+}
+
+.footer img {
+  width: 80%;
+  filter: invert(100%);
+}
+
 .cancel {
   display: flex;
   flex-direction: row;
@@ -68,6 +85,11 @@ html {
 
 .cancel a img {
   width: 30px;
+}
+
+#footnote img {
+  width: 80%;
+  filter: invert(100%);
 }
 
 .header-body {
@@ -230,19 +252,11 @@ html {
   display: none;
 }
 
-
-
-
-
 .partners {
   background-color: rgb(39, 42, 50);
   width: 100%;
   padding-top: 5px;
   padding-bottom: 10vh;
-}
-
-.partnership img {
-  width: 100%;
 }
 
 .program-heading1 {
@@ -275,20 +289,6 @@ html {
   margin-bottom: 28px;
 }
 
-.un-logo img {
-  width: 100%;
-}
-
-.gallery img {
-  width: 80%;
-}
-
-.footer img,
-#footnote img {
-  width: 80%;
-  filter: invert(100%);
-}
-
 .footer .txt {
   font-size: 1.1rem;
   font-weight: bold;
@@ -299,12 +299,6 @@ footer {
   color: var(--txtColor);
   padding: 1.2rem;
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
   .header-section {
