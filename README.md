@@ -23,7 +23,7 @@
 - GitHub Actions
 
 ## 🛫 Launch
- ***[🌐 Click Here to Launch 🧑‍✈️](https://Itswali.github.io/Capstone-project/)***
+ ***[🌐 Click Here to Launch 🧑‍✈️][(https://itswali.github.io/)***
 ### Live Preview
 
 
