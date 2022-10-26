@@ -25,14 +25,14 @@ html {
 
 .header-section {
   background-image: url(Images/bg-01.jpg);
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 
 .overlay {
-  background-color: #f0885b;
+  background-color: #40312a;
   mix-blend-mode: multiply;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   position: fixed;
   left: 0;
   top: 0;
@@ -72,6 +72,10 @@ html {
 .footer img {
   width: 80%;
   filter: invert(100%);
+}
+
+.speakerInt img {
+  width: 35vw;
 }
 
 .cancel {
@@ -292,12 +296,52 @@ html {
 .footer .txt {
   font-size: 1.1rem;
   font-weight: bold;
+  color: white;
 }
 
 footer {
   background-color: rgb(39, 42, 50);
-  color: var(--txtColor);
+  color: black;
   padding: 1.2rem;
+}
+
+.speakers .program-heading h1 {
+  color: black;
+}
+
+.speakingInt {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakerInt p {
+  margin: 5px;
+}
+
+.speakerInt {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.speak-container {
+  width: 85%;
+  margin: auto;
+}
+
+.speaker-name {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.speaker-profession {
+  font-size: 80%;
+  color: yellowgreen;
+  font-style: italic;
+}
+
+.speaker-description {
+  font-size: 70%;
 }
 
 @media screen and (min-width: 768px) {
@@ -387,12 +431,12 @@ footer {
   .header-text {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 30%;
   }
 
   .header-h2 {
     color: #ffd700;
-    padding-top: 12%;
+    padding-top: 1%;
     font-size: 42px;
     font-weight: 300;
   }
@@ -439,7 +483,7 @@ footer {
     background-repeat: repeat;
     background-color: rgb(39, 42, 50);
     margin: auto;
-    height: 70vh;
+    height: 90vh;
   }
 
   .all-program {
@@ -496,8 +540,7 @@ footer {
 
   .speakers {
     width: 100%;
-    height: 70vh;
-    padding-top: 5%;
+    height: 90vh;
     background-image: url(Images/bg-desktop.png);
   }
 
@@ -637,7 +680,6 @@ footer {
     display: flex;
     flex-direction: row;
     padding-top: 120px;
-    margin-top: 35%;
     background-image: url(Images/bg-desktop.png);
     height: 35vh;
     width: 100%;
@@ -660,5 +702,36 @@ footer {
     align-self: center;
     width: fit-content;
     font-size: 24px;
+    color: black;
+  }
+
+  .Intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    margin-bottom: 50px;
+  }
+
+  .speakerInt {
+    gap: 5%;
+  }
+
+  .speakerInt img {
+    width: 110%;
+  }
+
+  .speaker-name {
+    font-size: 22px;
+    margin: 3px;
+  }
+
+  .speaker-profession {
+    font-size: 13px;
+    margin: 3px;
+  }
+
+  .speaker-description {
+    font-size: 14px;
+    margin: 3px;
   }
 }
