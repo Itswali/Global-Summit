@@ -332,14 +332,6 @@ footer {
     display: none;
   }
 
-  .partners {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-
   .semi-nav {
     background-color: rgb(39, 42, 50);
     height: 5%;
@@ -377,7 +369,7 @@ footer {
 
   .nav-items {
     display: flex;
-    padding: 25px;
+    padding: 5px;
     width: 60%;
     flex-direction: row-reverse;
     gap: 4%;
@@ -399,62 +391,33 @@ footer {
 
   .header-body {
     background-image: url(Images/bg-desktop.png);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-left: 10%;
+    margin-top: 1px;
+    height: auto;
   }
 
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    height: 30%;
+  .header-text h1,
+  h2 {
+    width: 60%;
+    text-align: left;
+    font-size: 400%;
   }
 
-  .header-h2 {
-    color: #ffd700;
-    padding-top: 1%;
-    font-size: 42px;
+  .header-text h2 {
     font-weight: 300;
   }
 
-  .header-h1 {
-    color: gold;
-    font-size: 32px;
-    width: 75%;
-    font-weight: 800;
+  .header-text {
+    padding-top: 1px;
+    padding-bottom: 35px;
   }
 
-  .header-para {
-    width: 50%;
-    padding: 20px;
-    margin-top: 1%;
+  .our-location {
+    text-align: left;
+    line-height: 2rem;
   }
 
-  .header-para p {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 2px;
-  }
-
-  .header-about {
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    margin: 10px;
-  }
-
-  .header-about p {
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  .middle {
-    height: 200vh;
-    width: 100%;
-    border: 5px solid greenyellow;
+  .date {
+    font-size: 170%;
   }
 
   .main-program {
@@ -479,11 +442,10 @@ footer {
     margin: 20px;
     align-content: center;
     height: 90%;
-    height: auto;
-    background: rgba(255, 255, 255, 0.1);
-    width: 90%;
-    align-items: center;
-    padding: 0.8rem;
+  }
+
+  .all-program :hover {
+    border: 2px solid var(--txtColor);
   }
 
   .program .description {
@@ -503,24 +465,6 @@ footer {
     text-align: center;
     color: white;
     padding-top: 5rem;
-  }
-
-  .program-heading h1 {
-    font-size: 24px;
-  }
-
-  .program-heading1 h1 {
-    font-size: 32px;
-    padding-bottom: 30px;
-    margin-top: 0.1px;
-  }
-
-  .program-button {
-    background-color: transparent;
-    margin-bottom: 2%;
-    color: white;
-    font-size: 22px;
-    border-bottom: 1px solid white;
   }
 
   .speakers {
@@ -718,5 +662,10 @@ footer {
   .speaker-description {
     font-size: 14px;
     margin: 3px;
+  }
+
+  .footer .txt {
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
