@@ -114,13 +114,17 @@ html {
 
 .main-program {
   background-image: url(Images/program-pattern.png);
-  background-color: #3e3e3e;
+  background-color: rgb(39, 42, 50);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 11px 12px;
   gap: 10px;
+}
+
+.program-heading h1 {
+  color: #998515;
 }
 
 .all-program {
@@ -218,6 +222,90 @@ html {
   color: rgb(176, 120, 47);
 }
 
+.sponsors {
+  display: none;
+}
+
+.copyright-section {
+  display: none;
+}
+
+
+
+
+
+.partners {
+  background-color: rgb(39, 42, 50);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10vh;
+}
+
+.partnership img {
+  width: 100%;
+}
+
+.program-heading1 {
+  text-align: center;
+  color: #ffd700;
+  padding-top: 5rem;
+}
+
+.program-heading1 h1 {
+  font-size: 32px;
+  padding-bottom: 30px;
+  margin-top: 0.1px;
+}
+
+.partnership {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-top: 28px;
+  margin-bottom: 28px;
+}
+
+.un-logo img {
+  width: 100%;
+}
+
+.gallery img {
+  width: 80%;
+}
+
+.footer img,
+#footnote img {
+  width: 80%;
+  filter: invert(100%);
+}
+
+.footer .txt {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(39, 42, 50);
+  color: var(--txtColor);
+  padding: 1.2rem;
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
   .header-section {
     width: 100%;
@@ -227,8 +315,16 @@ html {
     display: none;
   }
 
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
   .semi-nav {
-    background-color: #3e3e3e;
+    background-color: rgb(39, 42, 50);
     height: 5%;
     width: 100%;
     display: flex;
