@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@1,100;1,400&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  padding: 0;
+  top: 0;
+  margin: 0;
+  color: #333;
+  background-image: url(Images/bg-desktop.png);
+}
+
+:root {
+  --primaryColor: #272a31;
+  --secondaryColor: #d3d3d3;
+  --concentColor: #ec5242;
+  --txtColor: #fff;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.semi-nav {
+  display: none;
+}
+
+.bars img {
+  margin: 35px;
+}
+
+.header-section {
+  background-image: url(Images/bg-01.jpg);
+  width: 100%;
+}
+
+.overlay {
+  background-color: #40312a;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-left: 50px;
+  gap: 20px;
+}
+
+.menu-item {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.un-logo img {
+  width: 100%;
+}
+
+.gallery img {
+  width: 80%;
+}
+
+.cancel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  right: 2%;
+  padding: 8px;
+}
+
+.header-body {
+  background-image: url(Images/bg-01.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section {
+  margin: 5%;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--concentColor);
+  padding-top: 50px;
+}
+
+.header-text > * {
+  margin-bottom: 1px;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.header-text h2 {
+  font-weight: 400;
+}
+
+.hero-paragraph {
+  border: 3px solid var(--txtColor);
+  margin: 5% 0.97%;
+  font-size: 1rem;
+}
+
+.hero-paragraph p {
+  margin: 3%;
+}
+
+.our-location {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 4vh;
+}
+
+.date {
+  font-weight: 900;
+}
+
+.main-program {
+  background-image: url(Images/program-pattern.png);
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+  margin: auto;
+}
+
+.program {
+  color: var(--txtColor);
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  width: 85%;
+  align-items: center;
+  margin-top: 8px;
+  padding: 0.8rem;
+}
+
+.program p {
+  color: var(--concentColor);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.program-heading {
+  text-align: center;
+  color: var(--txtColor);
+  padding-top: 5rem;
+}
+
+.program-heading h1 {
+  font-size: 24px;
+  margin-top: 0.1px;
+}
+
+hr {
+  border: 1px solid var(--concentColor);
+  width: 4rem;
+}
+
+.program-heading hr {
+  border: 1px solid var(--concentColor);
+  margin-top: -10px;
+}
+
+.join-us {
+  text-align: center;
+  padding: 30px;
+}
+
+.join-us button {
+  background-color: var(--concentColor);
+  height: 60px;
+  width: 300px;
+  border: none;
+  color: var(--txtColor);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.join-us button::before {
+  content: "JOIN CC GLOBAL SUMMIT";
+}
+
+.speakers .program-heading h1 {
+  color: var(--primaryColor);
+}
+
+.speakingInt {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakerInt p {
+  margin: 5px;
+}
+
+.speakerInt {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.speak-container {
+  width: 85%;
+  margin: auto;
+}
+
+.speaker-name {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.speakerInt img {
+  width: 35vw;
+}
+
+.speaker-profession {
+  font-size: 60%;
+  color: var(--concentColor);
+  font-style: italic;
+}
+
+.speaker-description {
+  font-size: 70%;
+}
+
+.Sponsor img {
+  filter: grayscale(100%);
+}
+
+.partnership img {
+  width: 100%;
+}
+
+.sponsors {
+  display: none;
+}
+
+.copyright-section {
+  display: none;
+}
+
+.partners {
+  background-color: var(--primaryColor);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10vh;
+}
+
+.program-heading1 {
+  text-align: center;
+  color: #ffd700;
+  padding-top: 5rem;
+}
+
+.partnership {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-top: 28px;
+  margin-bottom: 28px;
+}
+
+.footer img {
+  width: 80%;
+  filter: invert(100%);
+}
+
+.footer .txt {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--primaryColor);
+  color: var(--txtColor);
+  padding: 1.2rem;
+}
+
+.cancel a img {
+  width: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-section {
+    width: 100%;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .semi-nav {
+    background-color: rgb(39, 42, 50);
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding-right: 5%;
+  }
+
+  .semi-nav-items {
+    display: flex;
+  }
+
+  .semi-nav-items a {
+    padding: 10px;
+    color: aliceblue;
+  }
+
+  .nav-bar {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    gap: 20%;
+  }
+
+  .nav-logo {
+    display: flex;
+    width: 40%;
+    padding: 15px;
+    padding-left: 5%;
+  }
+
+  .nav-items {
+    display: flex;
+    padding: 5px;
+    width: 60%;
+    flex-direction: row-reverse;
+    gap: 4%;
+  }
+
+  .nav-items li a {
+    color: black;
+    font-size: 26px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+  }
+
+  .nav-items li a:active {
+    color: indianred;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .header-body {
+    background-image: url(Images/bg-desktop.png);
+    margin-top: 1px;
+    height: auto;
+  }
+
+  .header-text h1,
+  h2 {
+    width: 60%;
+    text-align: left;
+    font-size: 400%;
+  }
+
+  .header-text h2 {
+    font-weight: 300;
+  }
+
+  .header-text {
+    padding-top: 1px;
+    padding-bottom: 35px;
+  }
+
+  .our-location {
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  .date {
+    font-size: 170%;
+  }
+
+  .main-program {
+    background-image: url(Images/program-pattern.png);
+    background-repeat: repeat;
+    background-color: rgb(39, 42, 50);
+    margin: auto;
+    height: 90vh;
+  }
+
+  .all-program {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin: auto;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-content: center;
+    height: 90%;
+  }
+
+  .all-program :hover {
+    border: 2px solid var(--txtColor);
+  }
+
+  .program .description {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .program p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: brown;
+  }
+
+  .program-heading {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 5rem;
+  }
+
+  .speakers {
+    width: 100%;
+    height: 90vh;
+    background-image: url(Images/bg-desktop.png);
+  }
+
+  .speaker-heading {
+    align-self: center;
+  }
+
+  .speaker-heading h2 {
+    text-align: center;
+  }
+
+  .speakers-content,
+  .speaker-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  .speaker-3,
+  .speaker-1 {
+    display: flex;
+    height: 25vh;
+    margin: 3%;
+    width: fit-content;
+  }
+
+  .speaker-2 img,
+  .speaker-3 img,
+  .speaker-4 img,
+  .speaker-1 img {
+    width: 40%;
+  }
+
+  .speaker-2-content,
+  .speaker-3-content,
+  .speaker-4-content,
+  .speaker-1-content {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .speaker-2 h2,
+  .speaker-3 h2,
+  .speaker-4 h2,
+  .speaker-1 h2 {
+    margin-top: 25px;
+    font-size: 27px;
+    font-weight: 700;
+  }
+
+  .speaker-2 p,
+  .speaker-3 p,
+  .speaker-4 p,
+  .speaker-1 p {
+    color: chocolate;
+    font-weight: 500;
+  }
+
+  .speaker-4,
+  .speaker-2 {
+    display: flex;
+    height: 25vh;
+    margin: 3%;
+    width: fit-content;
+  }
+
+  .sponsors {
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(39, 42, 50);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsor-heading {
+    margin-top: 6%;
+    align-self: center;
+  }
+
+  .sponsor-heading h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid darkorange;
+  }
+
+  .sponsor-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    gap: 4%;
+    margin: 3%;
+  }
+
+  .sponsor-2,
+  .sponsor-3,
+  .sponsor-5,
+  .sponsor-4,
+  .sponsor-1 {
+    width: 15%;
+    height: 60%;
+  }
+
+  .sponsor-1 img {
+    width: 95%;
+    margin: 3%;
+  }
+
+  .sponsor-2 img {
+    margin: 5%;
+    width: 92%;
+    margin-top: 12%;
+  }
+
+  .sponsor-3 img {
+    margin: 2%;
+    width: 92%;
+    margin-top: 12%;
+  }
+
+  .sponsor-4 img {
+    margin: 2%;
+    width: 95%;
+    margin-top: 4%;
+  }
+
+  .sponsor-5 img {
+    width: 92%;
+    margin: 2%;
+    margin-top: 7%;
+  }
+
+  .copyright-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    background-image: url(Images/bg-desktop.png);
+    height: 35vh;
+    width: 100%;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyright-logo img {
+    width: 35%;
+    margin-top: 7%;
+    align-self: center;
+    margin-left: 25%;
+  }
+
+  .copy-right p {
+    margin-top: 20%;
+    align-self: center;
+    width: fit-content;
+    font-size: 24px;
+    color: black;
+  }
+
+  .Intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+    margin-bottom: 50px;
+  }
+
+  .speakerInt {
+    gap: 5%;
+  }
+
+  .speakerInt img {
+    width: 110%;
+  }
+
+  .speaker-name {
+    font-size: 22px;
+    margin: 3px;
+  }
+
+  .speaker-profession {
+    font-size: 13px;
+    margin: 3px;
+  }
+
+  .speaker-description {
+    font-size: 14px;
+    margin: 3px;
+  }
+
+  .footer .txt {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
