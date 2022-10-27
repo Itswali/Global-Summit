@@ -75,17 +75,24 @@ html {
 }
 
 .header-text {
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  color: #ec5242;
+  padding-top: 50px;
 }
 
-.header-h2 {
-  font-size: 28px;
-  color: #a9962b;
+.header-text > * {
+  margin-bottom: 1px;
 }
 
-.header-h1 {
-  color: #a9962b;
-  font-size: 22px;
+.header-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.header-text h2 {
+  font-weight: 400;
 }
 
 .summary {
@@ -155,12 +162,12 @@ html {
   display: flex;
   flex-direction: column;
   margin: 5%;
+  margin-bottom: 1px;
   width: 90%;
 }
 
 .mid-img1 {
   width: fit-content;
-  width: 100%;
   height: 45vh;
 }
 
@@ -169,7 +176,7 @@ html {
 }
 
 .mid-img2 {
-  width: 95%;
+  width: fit-content;
   height: 45vh;
 }
 
