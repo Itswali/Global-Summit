@@ -13,6 +13,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primaryColor: #272a31;
+  --secondaryColor: #d3d3d3;
+  --concentColor: #ec5242;
+  --txtColor: #fff;
+}
+
 .semi-nav {
   display: none;
 }
@@ -68,157 +75,195 @@ html {
   margin: 15px;
 }
 
-.header-body {
+.intro {
   background-image: url(Images/bg-01.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%;
-  height: 90vh;
 }
 
-.header-text {
+.hero-section {
+  margin: 5%;
+}
+
+.intro-text {
   display: flex;
   flex-direction: column;
-  color: #ec5242;
+  color: var(--concentColor);
   padding-top: 50px;
 }
 
-.header-text > * {
+.intro-text > * {
   margin-bottom: 1px;
 }
 
-.header-text h1 {
+.intro-text h1 {
   font-size: 2rem;
   font-weight: 900;
   margin-top: 10px;
 }
 
-.header-text h2 {
+.intro-text h2 {
   font-weight: 400;
 }
 
-.summary {
-  text-align: center;
-  padding: 2%;
-  background-color: #f6f3f3;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(1px);
-  border: 1px solid wheat;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.hero-paragraph {
+  border: 3px solid var(--txtColor);
+  margin: 5% 0.97%;
+  font-size: 1rem;
 }
 
-.summary h2 {
+.about-paragraph {
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px 0.1px;
+  padding: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 1px 6px 24px 1px,
+    rgba(0, 0, 0, 0.08) 0.1px 0.1px 0.1px 1px;
+}
+
+.summary-header {
+  color: var(--concentColor);
+}
+
+.reach-us-out {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px;
+  margin-top: 5%;
+}
+
+.reach-us-out i {
+  color: var(--concentColor);
+  font-size: 1rem;
+}
+
+.un-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 0.5rem;
+  color: var(--concentColor);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.rest {
+  background-color: var(--txtColor);
+}
+
+.sp-2 {
+  font-weight: 300;
+}
+
+.gallery img {
+  width: 80%;
+}
+
+.pics {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0.1px;
+}
+
+.un-activities {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--concentColor);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#p {
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+}
+
+/* img overlay */
+.img-cont {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.overlay1 {
+  margin: auto;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ec3723a4;
+  overflow: hidden;
+  transition: 0.5s ease;
+  height: 100%;
+}
+
+.img-cont:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
   font-size: 20px;
-  font-weight: 400;
-  color: #a9962b;
-}
-
-.summary p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-weight: 400;
-  font-size: 19px;
 }
 
-/* mid-part section */
-
-.mid-part {
-  background-color: white;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.text p {
+  font-weight: 800;
 }
 
-.mid-logo {
-  align-self: center;
-  padding: 2%;
+.text span {
+  font-weight: 300;
 }
 
-.mid-heading {
-  text-align: center;
-  color: #a9962b;
+#footnote {
+  background-color: var(--primaryColor);
+  color: var(--txtColor);
 }
 
-.activity {
-  align-self: center;
-  border-bottom: 1px solid #a9962b;
+.footer {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  padding-top: 28px;
+  margin-bottom: 28px;
 }
 
-.activity h1 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #a9962b;
+.footer img,
+#footnote img {
+  width: 80%;
+  filter: invert(100%);
 }
 
-.activity-para p {
-  text-align: center;
-  padding: 6%;
-  font-weight: 500;
-  font-size: 18px;
+.footer .txt {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.mid-img {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
-  margin-bottom: 1px;
-  width: 90%;
-}
-
-.mid-img1 {
-  width: fit-content;
-  height: 45vh;
-}
-
-.mid-img1 img {
-  width: 95%;
-}
-
-.mid-img2 {
-  width: fit-content;
-  height: 45vh;
-}
-
-.mid-img2 img {
-  width: 100%;
-}
-
-.footer-section {
-  background-color: #5f5454;
-  margin-top: 80%;
-  width: 100%;
-  height: 25vh;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-img {
-  height: 100px;
-  margin: 50px;
-  width: 50%;
-}
-
-.footer-img img {
-  width: 100%;
-  margin: 16px;
-}
-
-.footer-copy {
-  width: 45%;
-  margin: 10%;
-}
-
-.footer-copy p {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.cancel a img {
-  width: 30px;
+footer {
+  background-color: var(--primaryColor);
+  color: var(--txtColor);
+  padding: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -291,173 +336,86 @@ html {
     font-weight: 700;
   }
 
-  .header-body {
+  .intro {
     background-image: url(Images/bg-desktop.png);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-    padding-left: 10%;
+    margin-top: 1px;
+    height: auto;
   }
 
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    height: 40%;
+  .intro-text h1,
+  h2 {
+    width: 60%;
+    text-align: left;
+    font-size: 400%;
   }
 
-  .header-h2 {
-    color: #ffd700;
-    padding-top: 12%;
-    font-size: 45px;
+  .intro-text h2 {
     font-weight: 300;
   }
 
-  .header-h1 {
-    color: gold;
-    font-size: 35px;
-    width: 85%;
-    font-weight: 800;
+  .intro-text {
+    padding-top: 1px;
+    padding-bottom: 35px;
   }
 
-  .summary {
-    height: 80%;
-    margin: 5%;
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .footer {
+    justify-content: center;
+    align-items: center;
   }
 
-  .summary h2 {
-    text-align: center;
-    color: yellowgreen;
-    font-size: 35px;
+  .footer img {
+    width: 50%;
+    filter: var(--primaryColor) (100%);
   }
 
-  .summary p {
-    text-align: center;
-    font-size: 22px;
+  .un-logo img {
+    width: 120%;
   }
 
-  .summary h3 {
-    text-align: center;
-    font-size: 22px;
+  .cancel a img {
+    width: 30px;
   }
 
-  .summary h4 {
-    text-align: center;
-    font-size: 24px;
+
+  #footnote img {
+    width: 50%;
   }
 
-  .mid-part {
-    background-color: whitesmoke;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    padding-top: 10%;
-    flex-direction: column;
-    gap: 25px;
+  footer {
+    background-color: transparent;
+    color: var(--primaryColor);
+    font-size: 3rem;
   }
 
-  .mid-logo {
-    align-self: center;
-    padding-top: 30px;
+  /* Desktop About page starts here */
+  .about-paragraph {
+    padding: 5%;
+    font-size: 1.03em;
   }
 
-  .mid-heading {
-    align-self: center;
-    display: flex;
+  .summary-header {
+    font-size: 1.4rem;
+  }
+
+  .reach-us-out {
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    gap: 5px;
   }
 
-  .mid-heading h1 {
-    color: yellowgreen;
-    font-size: 34px;
+  .pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
   }
 
-  .mid-heading h3 {
-    color: yellowgreen;
-    font-size: 28px;
-    font-weight: 300;
+  .un-activities,
+  .un-logo {
+    font-size: 1.4rem;
   }
 
-  .activity {
-    border-bottom: 3px solid gold;
-    width: fit-content;
-    align-self: center;
-  }
-
-  .activity h1 {
-    font-size: 28px;
-    color: goldenrod;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  .activity-para p {
-    text-align: center;
-    font-size: 24px;
-    padding-top: 30px;
-  }
-
-  .mid-img {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    align-self: center;
-    margin-top: 2%;
-    width: 85%;
-    height: 45vh;
-
-    /* padding: 5%; */
-  }
-
-  .mid-img1 {
-    width: 40%;
-    margin: 1%;
-    height: 90%;
-  }
-
-  .mid-img1 img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .mid-img2 {
-    width: 40%;
-    margin: 1%;
-    height: 90%;
-  }
-
-  .mid-img2 img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .footer-section {
-    background-color: #775c5c;
-    height: 35vh;
-    margin-top: 14%;
-    width: 100%;
-  }
-
-  .footer-img img {
-    width: 75%;
-    float: left;
-    padding: 2%;
-  }
-
-  .footer-copy {
-    padding: 0%;
-    margin: 7%;
-  }
-
-  .footer-copy p {
-    font-size: 30px;
-    font-weight: 600;
-    padding: 1%;
+  #p {
+    font-size: 1.2rem;
+    width: 70%;
   }
 }
