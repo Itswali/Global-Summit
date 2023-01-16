@@ -23,7 +23,7 @@
 - GitHub Actions
 
 ## 🛫 Launch
- ***[🌐 Click Here to Launch 🧑‍✈️][(https://itswali.github.io/)***
+ ***[🌐 Click Here to Launch 🧑‍✈️][https://itswali.github.io/Global-Summit/]***
 ### Live Preview
 
 
