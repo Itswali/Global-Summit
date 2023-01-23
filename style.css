@@ -62,7 +62,6 @@ body {
 .main-menu {
   display: flex;
   flex-direction: column;
-  padding-top: 106px;
   padding-left: 50px;
   gap: 20px;
 }
@@ -94,7 +93,6 @@ body {
 .header-body {
   background-image: url(Images/bg-01.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
   width: 100%;
 }
 
@@ -425,7 +423,6 @@ footer {
     background-repeat: repeat;
     background-color: rgb(39, 42, 50);
     margin: auto;
-    height: 90vh;
   }
 
   .all-program {
@@ -469,7 +466,6 @@ footer {
 
   .speakers {
     width: 100%;
-    height: 90vh;
     background-image: url(Images/bg-desktop.png);
   }
 
@@ -491,7 +487,6 @@ footer {
   .speaker-3,
   .speaker-1 {
     display: flex;
-    height: 25vh;
     margin: 3%;
     width: fit-content;
   }
@@ -533,13 +528,11 @@ footer {
   .speaker-4,
   .speaker-2 {
     display: flex;
-    height: 25vh;
     margin: 3%;
     width: fit-content;
   }
 
   .sponsors {
-    height: 40vh;
     width: 100%;
     background-color: rgb(39, 42, 50);
     display: flex;
@@ -562,7 +555,6 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
     gap: 4%;
     margin: 3%;
   }
@@ -610,7 +602,6 @@ footer {
     flex-direction: row;
     padding-top: 120px;
     background-image: url(Images/bg-desktop.png);
-    height: 35vh;
     width: 100%;
   }
 
